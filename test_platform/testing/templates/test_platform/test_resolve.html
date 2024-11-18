@@ -1,0 +1,22 @@
+{% extends "test_platform/base.html" %}
+
+{% block title %}Resolve Test{% endblock %}
+
+{% block content %}
+<h1>{{ test.name }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+        <div class="question">
+            <p><strong>{{ forloop.counter }}. {{ question.content }}</strong></p>
+            {% for option in question.options.split(",") %}
+                <label>
+                    <input type="radio" name="answers" value="{{ option.strip }}">
+                    {{ option.strip }}
+                </label>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <button type="submit" class="btn">Submit Test</button>
+</form>
+{% endblock %}

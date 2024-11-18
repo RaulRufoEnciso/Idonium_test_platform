@@ -1,0 +1,19 @@
+{% extends "test_platform/base.html" %}
+
+{% block title %}Add Questions{% endblock %}
+
+{% block content %}
+<h1>Add Questions to {{ test.name }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn">Add Question</button>
+</form>
+<hr>
+<h2>Existing Questions</h2>
+<ul>
+    {% for question in test.questions.all %}
+        <li>{{ question.content }} - Correct Answer: {{ question.correct_answer }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

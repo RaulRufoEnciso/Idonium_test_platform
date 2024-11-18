@@ -1,0 +1,20 @@
+{% extends "test_platform/base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h1>{{ message }}</h1>
+{% if user.is_headhunter %}
+    <a href="{% url 'create_test' %}" class="btn">Create New Test</a>
+{% endif %}
+<ul>
+    {% for test in tests %}
+        <li>
+            <strong>{{ test.name }}</strong> - {{ test.description }}
+            {% if not user.is_headhunter %}
+                <a href="{% url 'take_test' test.id %}" class="btn">Take Test</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

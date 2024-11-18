@@ -1,0 +1,9 @@
+{% extends "test_platform/base.html" %}
+
+{% block title %}Test Result{% endblock %}
+
+{% block content %}
+<h1>Test Result</h1>
+<p>Your score is {{ score }} out of {{ total }}</p>
+<a href="{% url 'dashboard' %}" class="btn">Go Back</a>
+{% endblock %}

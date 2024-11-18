@@ -1,0 +1,23 @@
+{% extends "test_platform/base.html" %}
+
+{% block title %}Take Test{% endblock %}
+
+{% block content %}
+<h1>{{ test.name }}</h1>
+<p>{{ test.description }}</p>
+<form method="post">
+    {% csrf_token %}
+    {% for question in test.questions.all %}
+        <div class="question">
+            <p><strong>{{ forloop.counter }}. {{ question.content }}</strong></p>
+            {% for option in question.options.split(",") %}
+                <label>
+                    <input type="radio" name="question_{{ question.id }}" value="{{ option.strip }}">
+                    {{ option.strip }}
+                </label>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <button type="submit" class="btn">Submit Test</button>
+</form>
+{% endblock %}

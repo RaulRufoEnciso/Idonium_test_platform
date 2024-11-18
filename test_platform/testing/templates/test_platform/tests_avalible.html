@@ -1,0 +1,30 @@
+{% extends "test_platform/base.html" %}
+
+{% block title %}Available Tests{% endblock %}
+
+{% block content %}
+<h1>Available Tests</h1>
+<h2>Database Tests</h2>
+<ul>
+    {% for test in db_tests %}
+        <li>
+            <strong>{{ test.name }}</strong> - {{ test.description }}
+            <a href="{% url 'take_test' test.id %}" class="btn">Take Test</a>
+        </li>
+    {% endfor %}
+</ul>
+<hr>
+<h2>JSON Tests</h2>
+<ul>
+    {% for test in json_tests %}
+        <li>
+            <strong>{{ test.name }}</strong> - {{ test.description }}
+            <form method="post" action="{% url 'resolve_json_test' %}">
+                {% csrf_token %}
+                <input type="hidden" name="test_data" value="{{ test|safe }}">
+                <button type="submit" class="btn">Take Test</button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
