@@ -98,6 +98,7 @@ def available_tests(request):
     db_tests = Test.objects.filter(is_from_json=False)
     return render(request, "test_platform/tests_avalible.html", {"db_tests": db_tests, "json_tests": json_tests})
 
+
 # RESOLVE JSON TEST
 def resolve_json_test(request):
     if request.method == "POST":
