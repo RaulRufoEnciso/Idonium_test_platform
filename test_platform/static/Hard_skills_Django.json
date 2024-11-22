@@ -1,0 +1,252 @@
+[
+  {
+    "category": "Django",
+    "question": "1. What is a correct syntax for creating a Django project?",
+    "answers": [
+      "1. py manage.py start-django my_tennis_club",
+      "2. django-admin startproject my_tennis_club",
+      "3. django start my_tennis_club"
+    ],
+    "correct_answer": "2. django-admin startproject my_tennis_club"
+  },
+  {
+    "category": "Django",
+    "question": "2. What is a correct syntax to start a Django development server on your computer?",
+    "answers": [
+      "1. py manage.py run",
+      "2. py manage.py startserver",
+      "3. py manage.py runserver"
+    ],
+    "correct_answer": "3. py manage.py runserver"
+  },
+  {
+    "category": "Django",
+    "question": "3. When you create a Django project on your computer, you will get a folder for your project with a specific content. Which one of the following files is NOT part of the content?",
+    "answers": [
+      "1. templates.py",
+      "2. settings.py",
+      "3. manage.py"
+    ],
+    "correct_answer": "1. templates.py"
+  },
+  {
+    "category": "Django",
+    "question": "4. Which language is Django written in?",
+    "answers": [
+      "1. JavaC",
+      "2. Python"
+    ],
+    "correct_answer": "2. Python"
+  },
+  {
+    "category": "Django",
+    "question": "5. In Django, incoming requests are handled in which file?",
+    "answers": [
+      "1. manage.py",
+      "2. settings.py",
+      "3. urls.py"
+    ],
+    "correct_answer": "3. urls.py"
+  },
+  {
+    "category": "Django",
+    "question": "6. In Django, incoming requests are redirected to specific functions, what are these functions called?",
+    "answers": [
+      "1. models",
+      "2. views",
+      "3. controls"
+    ],
+    "correct_answer": "2. views"
+  },
+  {
+    "category": "Django",
+    "question": "7. Django templates are often .html pages.",
+    "answers": [
+      "1. Yes",
+      "2. No, never"
+    ],
+    "correct_answer": "1. Yes"
+  },
+  {
+    "category": "Django",
+    "question": "8. In Django, data is created in objects, what are these objects called in Django?",
+    "answers": [
+      "1. Tables",
+      "2. Models",
+      "3. SQLite"
+    ],
+    "correct_answer": "2. Models"
+  },
+  {
+    "category": "Django",
+    "question": "9. When you have done changes in a model, which command has to be executed in order to make the changes take effect in the database?",
+    "answers": [
+      "1. py manage.py runmigrations",
+      "2. py manage.py executemigrations",
+      "3. py manage.py makemigrations"
+    ],
+    "correct_answer": "3. py manage.py makemigrations"
+  },
+  {
+    "category": "Django",
+    "question": "10. If you have a Django application named members, and a model named Member, what is a correct syntax to import the model?",
+    "answers": [
+      "1. from members.models import Member",
+      "2. import members.Member",
+      "3. import Member from members"
+    ],
+    "correct_answer": "1. from members.models import Member"
+  },
+  {
+    "category": "Django",
+    "question": "11. To use a Django variable named firstname in a Django template, use this syntax:",
+    "answers": [
+      "1. ## firstname ##",
+      "2. {{ firstname }}",
+      "3. ' firstname '"
+    ],
+    "correct_answer": "2. {{ firstname }}"
+  },
+  {
+    "category": "Django",
+    "question": "12. In Django, Views are written as:",
+    "answers": [
+      "1. Python functions",
+      "2. Python tuples",
+      "3. Python dictionaries"
+    ],
+    "correct_answer": "1. Python functions"
+  },
+  {
+    "category": "Django",
+    "question": "13. Django comes with a file containing all the configuration of your Django installation, what is the file's name?",
+    "answers": [
+      "1. config.py",
+      "2. views.py",
+      "3. settings.py"
+    ],
+    "correct_answer": "3. settings.py"
+  },
+  {
+    "category": "Django",
+    "question": "14. In the configuration file, what is the correct syntax to turn off debugging?",
+    "answers": [
+      "1. DEBUG : 'off'",
+      "2. DEBUG : 0",
+      "3. DEBUG = FALSE",
+      "4. DEBUG = 'OFF'"
+    ],
+    "correct_answer": "3. DEBUG = FALSE"
+  },
+  {
+    "category": "Django",
+    "question": "15. When debugging is turned off, you have to define which hosts are allowed to serve your project.",
+    "answers": [
+      "1. False",
+      "2. True"
+    ],
+    "correct_answer": "2. True"
+  },
+  {
+    "category": "Django",
+    "question": "16. Django comes with a built-in user interface that allows you to administrate your data. To access this interface you have to create a user name and password. What is a correct syntax to create such user?",
+    "answers": [
+      "1. py.manage.py createadminuser",
+      "2. py manage.py createsuperuser",
+      "3. py manage.py createuser"
+    ],
+    "correct_answer": "2. py manage.py createsuperuser"
+  },
+  {
+    "category": "Django",
+    "question": "17. For a model to be visible in the admin interface it has to be registered in which file?",
+    "answers": [
+      "1. admin.py",
+      "2. settings.py",
+      "3. views.py"
+    ],
+    "correct_answer": "1. admin.py"
+  },
+  {
+    "category": "Django",
+    "question": "18. To perform programming logic in Django templates, you can use 'template tags', what is a correct syntax to start a for loop?",
+    "answers": [
+      "1. <% for x in y %>",
+      "2. {% for x in y %}",
+      "3. { for x in y }"
+    ],
+    "correct_answer": "2. {% for x in y %}"
+  },
+  {
+    "category": "Django",
+    "question": "19. What is the correct Django tag to use when writing a comment?",
+    "answers": [
+      "1. exclude",
+      "2. remove",
+      "3. comment"
+    ],
+    "correct_answer": "3. comment"
+  },
+  {
+    "category": "Django",
+    "question": "20. What is the correct Django tag to use when writing a conditional (if) statement?",
+    "answers": [
+      "1. !!",
+      "2. if",
+      "3. when"
+    ],
+    "correct_answer": "2. if"
+  },
+  {
+    "category": "Django",
+    "question": "21. What is the correct tag to use when ending an if statement?",
+    "answers": [
+      "1. endif",
+      "2. /if",
+      "3. end if",
+      "4. end"
+    ],
+    "correct_answer": "1. endif"
+  },
+  {
+    "category": "Django",
+    "question": "22. What is the correct operator to use in if statements to evaluate if A is equal to B?",
+    "answers": [
+      "1. if A equal B",
+      "2. if A like B",
+      "3. if A == B"
+    ],
+    "correct_answer": "3. if A == B"
+  },
+  {
+    "category": "Django",
+    "question": "23. What tag can be used to create a variable inside a template?",
+    "answers": [
+      "1. with",
+      "2. var",
+      "3. let"
+    ],
+    "correct_answer": "1. with"
+  },
+  {
+    "category": "Django",
+    "question": "24. QuerySets can be used to query data in Django. What is a correct syntax to return only the records where 'firstname' is 'Emil'?",
+    "answers": [
+      "1. where(firstname LIKE 'Emil')",
+      "2. get(firstname='Emil')",
+      "3. filter(firstname='Emil')"
+    ],
+    "correct_answer": "3. filter(firstname='Emil')"
+  },
+  {
+    "category": "Django",
+    "question": "25. What is the correct syntax to sort the queryset alphabetically by 'firstname'?",
+    "answers": [
+      "1. sort('firstname')",
+      "2. order_by('firstname')",
+      "3. orderby('firstname')",
+      "4. sortby('firstname')"
+    ],
+    "correct_answer": "2. order_by('firstname')"
+  }
+]

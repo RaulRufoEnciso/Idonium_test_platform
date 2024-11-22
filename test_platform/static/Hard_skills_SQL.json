@@ -1,1 +1,262 @@
-[{"category": "SQL", "question": "What does SQL stand for?", "answers": ["Structured Query Language", "Structured Question Language", "Strong Query Language"], "correct_answer": "Structured Query Language"}, {"category": "SQL", "question": "Which SQL statement is used to extract data from a database?", "answers": ["OPEN", "SELECT", "GET", "EXTRACT"], "correct_answer": "SELECT"}, {"category": "SQL", "question": "Which SQL statement is used to update data in a database?", "answers": ["SAVE AS", "MODIFY", "UPDATE", "SAVE"], "correct_answer": "UPDATE"}, {"category": "SQL", "question": "Which SQL statement is used to delete data from a database?", "answers": ["DELETE", "COLLAPSE", "REMOVE"], "correct_answer": "DELETE"}, {"category": "SQL", "question": "Which SQL statement is used to insert new data in a database?", "answers": ["ADD NEW", "INSERT NEW", "ADD RECORD", "INSERT INTO"], "correct_answer": "INSERT INTO"}, {"category": "SQL", "question": "With SQL, how do you select a column named 'FirstName' from a table named 'Persons'?", "answers": ["SELECT Person.FirstName", "EXTRACT FirstName FROM Persons", "SELECT FirstName FROM Persons"], "correct_answer": "SELECT FirstName FROM Persons"}, {"category": "SQL", "question": "With SQL, how do you select all the columns from a table named 'Persons'?", "answers": ["SELECT *.Persons", "SELECT * FROM Persons", "SELECT [all] FROM Persons", "SELECT Persons"], "correct_answer": "SELECT * FROM Persons"}, {"category": "SQL", "question": "With SQL, how do you select all the records from a table named 'Persons' where the value of the column 'FirstName' is 'Peter'?", "answers": ["SELECT * FROM Persons WHERE FirstName<>'Peter'", "SELECT [all] FROM Persons WHERE FirstName='Peter'", "SELECT * FROM Persons WHERE FirstName='Peter'", "SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'"], "correct_answer": "SELECT * FROM Persons WHERE FirstName='Peter'"}, {"category": "SQL", "question": "With SQL, how do you select all the records from a table named 'Persons' where the value of the column 'FirstName' starts with an 'a'?", "answers": ["SELECT * FROM Persons WHERE FirstName LIKE '%a'", "SELECT * FROM Persons WHERE FirstName='a'", "SELECT * FROM Persons WHERE FirstName='%a%'", "SELECT * FROM Persons WHERE FirstName LIKE 'a%'"], "correct_answer": "SELECT * FROM Persons WHERE FirstName LIKE 'a%'"}, {"category": "SQL", "question": "The OR operator displays a record if ANY conditions listed are true. The AND operator displays a record if ALL of the conditions listed are true", "answers": ["True", "False"], "correct_answer": "True"}, {"category": "SQL", "question": "With SQL, how do you select all the records from a table named 'Persons' where the 'FirstName' is 'Peter' and the 'LastName' is 'Jackson'?", "answers": ["SELECT FirstName='Peter', LastName='Jackson' FROM Persons", "SELECT * FROM Persons WHERE FirstName<>'Peter' AND LastName<>'Jackson'", "SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'"], "correct_answer": "SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'"}, {"category": "SQL", "question": "With SQL, how do you select all the records from a table named 'Person' where the 'LastName' is alphabetically between (and including) 'Hansen' and 'Pettersen'?", "answers": ["SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'", "SELECT LastName>'Hansen' AND 'LastName<'Pettersen' from Persons", "SELECT * FROM Persons WHERE LastName>'Hansen' AND LastName<'Pettersen'"], "correct_answer": "SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'"}, {"category": "SQL", "question": "Which SQL statement is used to return only different values?", "answers": ["SELECT DIFFERENT", "SELECT UNIQUE", "SELECT DISTINCT"], "correct_answer": "SELECT DISTINCT"}, {"category": "SQL", "question": "Which SQL keyword is used to sort the result-set?", "answers": ["SORT", "ORDER", "SORT BY", "ORDER BY"], "correct_answer": "ORDER BY"}, {"category": "SQL", "question": "With SQL, how can you return all the records from a table named 'Persons' sorted descending by 'FirstName'?", "answers": ["SELECT * FROM Persons SORT BY 'FirstName' DESC", "SELECT * FROM Persons ORDER BY FirstName DESC", "SELECT * FROM Persons SORT 'FirstName' DESC", "SELECT * FROM Persons ORDER FirstName DESC"], "correct_answer": "SELECT * FROM Persons ORDER BY FirstName DESC"}, {"category": "SQL", "question": "With SQL, how can you insert a new record into the 'Persons' table?", "answers": ["INSERT ('Jimmy', 'Jackson') INTO Persons", "INSERT INTO Persons VALUES('Jimmy', 'Jackson')", "INSERT VALUES ('Jimmy', 'Jackson') INTO Persons"], "correct_answer": "INSERT INTO Persons VALUES('Jimmy', 'Jackson')"}, {"category": "SQL", "question": "With SQL, how can you insert 'Olsen' as the 'LastName' in the 'Persons' table?", "answers": ["INSERT INTO Persons ('Olsen') INTO LastName", "INSERT ('Olsen') INTO Persons (LastName)", "INSERT INTO Persons ('LastName') VALUES ('Olsen')"], "correct_answer": "INSERT INTO Persons ('LastName') VALUES ('Olsen')"}, {"category": "SQL", "question": "How can you change 'Hansen' into 'Nilsen' in the 'LastName' column in the Persons table?", "answers": ["UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'", "MODIFY Persons SET LastName='Nilsen' WHERE LastName='Hansen'", "MODIFY Persons SET LastName='Hansen' INTO LastName='Nilsen'", "UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'"], "correct_answer": "UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'"}, {"category": "SQL", "question": "With SQL, how can you delete the records where the 'FirstName' is 'Peter' in the Persons Table?", "answers": ["DELETE ROW FirstName='Peter' FROM Persons", "DELETE FROM Persons WHERE FirstName='Peter'", "DELETE FirstName='Peter' FROM Persons"], "correct_answer": "DELETE FROM Persons WHERE FirstName='Peter'"}, {"category": "SQL", "question": "With SQL, how can you return the number of records in the 'Persons' table?", "answers": ["SELECT LEN(*) FROM Persons", "SELECT COUNT(*) FROM Persons", "SELECT NO(*) FROM Persons", "SELECT COLUMNS(*) FROM Persons"], "correct_answer": "SELECT COUNT(*) FROM Persons"}, {"category": "SQL", "question": "What is the most common type of join?", "answers": ["INNER JOIN", "JOINED TABLE", "INSIDE JOIN", "JOINED"], "correct_answer": "INNER JOIN"}, {"category": "SQL", "question": "Which operator is used to select values within a range?", "answers": ["BETWEEN", "WITHIN", "RANGE"], "correct_answer": "BETWEEN"}, {"category": "SQL", "question": "The NOT NULL constraint enforces a column to not accept NULL values.", "answers": ["True", "False"], "correct_answer": "True"}, {"category": "SQL", "question": "Which operator is used to search for a specified pattern in a column?", "answers": ["GET", "LIKE", "FROM"], "correct_answer": "LIKE"}, {"category": "SQL", "question": "Which SQL statement is used to create a database table called 'Customers'?", "answers": ["CREATE DATABASE TAB Customers", "CREATE DATABASE TABLE Customers", "CREATE TABLE Customers", "CREATE DB CUSTOMERS"], "correct_answer": "CREATE TABLE Customers"}]
+[
+  {
+    "category": "SQL",
+    "question": "1. What does SQL stand for?",
+    "answers": [
+      "1. Structured Query Language",
+      "2. Structured Question Language",
+      "3. Strong Query Language"
+    ],
+    "correct_answer": "1. Structured Query Language"
+  },
+  {
+    "category": "SQL",
+    "question": "2. Which SQL statement is used to extract data from a database?",
+    "answers": [
+      "1. OPEN",
+      "2. SELECT",
+      "3. GET",
+      "4. EXTRACT"
+    ],
+    "correct_answer": "2. SELECT"
+  },
+  {
+    "category": "SQL",
+    "question": "3. Which SQL statement is used to update data in a database?",
+    "answers": [
+      "1. SAVE AS",
+      "2. MODIFY",
+      "3. UPDATE",
+      "4. SAVE"
+    ],
+    "correct_answer": "3. UPDATE"
+  },
+  {
+    "category": "SQL",
+    "question": "4. Which SQL statement is used to delete data from a database?",
+    "answers": [
+      "1. DELETE",
+      "2. COLLAPSE",
+      "3. REMOVE"
+    ],
+    "correct_answer": "1. DELETE"
+  },
+  {
+    "category": "SQL",
+    "question": "5. Which SQL statement is used to insert new data in a database?",
+    "answers": [
+      "1. ADD NEW",
+      "2. INSERT NEW",
+      "3. ADD RECORD",
+      "4. INSERT INTO"
+    ],
+    "correct_answer": "4. INSERT INTO"
+  },
+  {
+    "category": "SQL",
+    "question": "6. With SQL, how do you select a column named 'FirstName' from a table named 'Persons'?",
+    "answers": [
+      "1. SELECT Person.FirstName",
+      "2. EXTRACT FirstName FROM Persons",
+      "3. SELECT FirstName FROM Persons"
+    ],
+    "correct_answer": "3. SELECT FirstName FROM Persons"
+  },
+  {
+    "category": "SQL",
+    "question": "7. With SQL, how do you select all the columns from a table named 'Persons'?",
+    "answers": [
+      "1. SELECT *.Persons",
+      "2. SELECT * FROM Persons",
+      "3. SELECT [all] FROM Persons",
+      "4. SELECT Persons"
+    ],
+    "correct_answer": "2. SELECT * FROM Persons"
+  },
+  {
+    "category": "SQL",
+    "question": "8. With SQL, how do you select all the records from a table named 'Persons' where the value of the column 'FirstName' is 'Peter'?",
+    "answers": [
+      "1. SELECT * FROM Persons WHERE FirstName<>'Peter'",
+      "2. SELECT [all] FROM Persons WHERE FirstName='Peter'",
+      "3. SELECT * FROM Persons WHERE FirstName='Peter'",
+      "4. SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'"
+    ],
+    "correct_answer": "3. SELECT * FROM Persons WHERE FirstName='Peter'"
+  },
+  {
+    "category": "SQL",
+    "question": "9. With SQL, how do you select all the records from a table named 'Persons' where the value of the column 'FirstName' starts with an 'a'?",
+    "answers": [
+      "1. SELECT * FROM Persons WHERE FirstName LIKE '%a'",
+      "2. SELECT * FROM Persons WHERE FirstName='a'",
+      "3. SELECT * FROM Persons WHERE FirstName='%a%'",
+      "4. SELECT * FROM Persons WHERE FirstName LIKE 'a%'"
+    ],
+    "correct_answer": "4. SELECT * FROM Persons WHERE FirstName LIKE 'a%'"
+  },
+  {
+    "category": "SQL",
+    "question": "10. The OR operator displays a record if ANY conditions listed are true. The AND operator displays a record if ALL of the conditions listed are true",
+    "answers": [
+      "1. True",
+      "2. False"
+    ],
+    "correct_answer": "1. True"
+  },
+  {
+    "category": "SQL",
+    "question": "11. With SQL, how do you select all the records from a table named 'Persons' where the 'FirstName' is 'Peter' and the 'LastName' is 'Jackson'?",
+    "answers": [
+      "1. SELECT FirstName='Peter', LastName='Jackson' FROM Persons",
+      "2. SELECT * FROM Persons WHERE FirstName<>'Peter' AND LastName<>'Jackson'",
+      "3. SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'"
+    ],
+    "correct_answer": "3. SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'"
+  },
+  {
+    "category": "SQL",
+    "question": "12. With SQL, how do you select all the records from a table named 'Person' where the 'LastName' is alphabetically between (and including) 'Hansen' and 'Pettersen'?",
+    "answers": [
+      "1. SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'",
+      "2. SELECT LastName>'Hansen' AND 'LastName<'Pettersen' from Persons",
+      "3. SELECT * FROM Persons WHERE LastName>'Hansen' AND LastName<'Pettersen'"
+    ],
+    "correct_answer": "1. SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'"
+  },
+  {
+    "category": "SQL",
+    "question": "13. Which SQL statement is used to return only different values?",
+    "answers": [
+      "1. SELECT DIFFERENT",
+      "2. SELECT UNIQUE",
+      "3. SELECT DISTINCT"
+    ],
+    "correct_answer": "3. SELECT DISTINCT"
+  },
+  {
+    "category": "SQL",
+    "question": "14. Which SQL keyword is used to sort the result-set?",
+    "answers": [
+      "1. SORT",
+      "2. ORDER",
+      "3. SORT BY",
+      "4. ORDER BY"
+    ],
+    "correct_answer": "4. ORDER BY"
+  },
+  {
+    "category": "SQL",
+    "question": "15. With SQL, how can you return all the records from a table named 'Persons' sorted descending by 'FirstName'?",
+    "answers": [
+      "1. SELECT * FROM Persons SORT BY 'FirstName' DESC",
+      "2. SELECT * FROM Persons ORDER BY FirstName DESC",
+      "3. SELECT * FROM Persons SORT 'FirstName' DESC",
+      "4. SELECT * FROM Persons ORDER FirstName DESC"
+    ],
+    "correct_answer": "2. SELECT * FROM Persons ORDER BY FirstName DESC"
+  },
+  {
+    "category": "SQL",
+    "question": "16. With SQL, how can you insert a new record into the 'Persons' table?",
+    "answers": [
+      "1. INSERT ('Jimmy', 'Jackson') INTO Persons",
+      "2. INSERT INTO Persons VALUES('Jimmy', 'Jackson')",
+      "3. INSERT VALUES ('Jimmy', 'Jackson') INTO Persons"
+    ],
+    "correct_answer": "2. INSERT INTO Persons VALUES('Jimmy', 'Jackson')"
+  },
+  {
+    "category": "SQL",
+    "question": "17. With SQL, how can you insert 'Olsen' as the 'LastName' in the 'Persons' table?",
+    "answers": [
+      "1. INSERT INTO Persons ('Olsen') INTO LastName",
+      "2. INSERT ('Olsen') INTO Persons (LastName)",
+      "3. INSERT INTO Persons ('LastName') VALUES ('Olsen')"
+    ],
+    "correct_answer": "3. INSERT INTO Persons ('LastName') VALUES ('Olsen')"
+  },
+  {
+    "category": "SQL",
+    "question": "18. How can you change 'Hansen' into 'Nilsen' in the 'LastName' column in the Persons table?",
+    "answers": [
+      "1. UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'",
+      "2. MODIFY Persons SET LastName='Nilsen' WHERE LastName='Hansen'",
+      "3. MODIFY Persons SET LastName='Hansen' INTO LastName='Nilsen'",
+      "4. UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'"
+    ],
+    "correct_answer": "4. UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'"
+  },
+  {
+    "category": "SQL",
+    "question": "19. With SQL, how can you delete the records where the 'FirstName' is 'Peter' in the Persons Table?",
+    "answers": [
+      "1. DELETE ROW FirstName='Peter' FROM Persons",
+      "2. DELETE FROM Persons WHERE FirstName='Peter'",
+      "3. DELETE FirstName='Peter' FROM Persons"
+    ],
+    "correct_answer": "2. DELETE FROM Persons WHERE FirstName='Peter'"
+  },
+  {
+    "category": "SQL",
+    "question": "20. With SQL, how can you return the number of records in the 'Persons' table?",
+    "answers": [
+      "1. SELECT LEN(*) FROM Persons",
+      "2. SELECT COUNT(*) FROM Persons",
+      "3. SELECT NO(*) FROM Persons",
+      "4. SELECT COLUMNS(*) FROM Persons"
+    ],
+    "correct_answer": "2. SELECT COUNT(*) FROM Persons"
+  },
+  {
+    "category": "SQL",
+    "question": "21. What is the most common type of join?",
+    "answers": [
+      "1. INNER JOIN",
+      "2. JOINED TABLE",
+      "3. INSIDE JOIN",
+      "4. JOINED"
+    ],
+    "correct_answer": "1. INNER JOIN"
+  },
+  {
+    "category": "SQL",
+    "question": "22. Which operator is used to select values within a range?",
+    "answers": [
+      "1. BETWEEN",
+      "2. WITHIN",
+      "3. RANGE"
+    ],
+    "correct_answer": "1. BETWEEN"
+  },
+  {
+    "category": "SQL",
+    "question": "23. The NOT NULL constraint enforces a column to not accept NULL values.",
+    "answers": [
+      "1. True",
+      "2. False"
+    ],
+    "correct_answer": "1. True"
+  },
+  {
+    "category": "SQL",
+    "question": "24. Which operator is used to search for a specified pattern in a column?",
+    "answers": [
+      "1. GET",
+      "2. LIKE",
+      "3. FROM"
+    ],
+    "correct_answer": "2. LIKE"
+  },
+  {
+    "category": "SQL",
+    "question": "25. Which SQL statement is used to create a database table called 'Customers'?",
+    "answers": [
+      "1. CREATE DATABASE TAB Customers",
+      "2. CREATE DATABASE TABLE Customers",
+      "3. CREATE TABLE Customers",
+      "4. CREATE DB CUSTOMERS"
+    ],
+    "correct_answer": "3. CREATE TABLE Customers"
+  }
+  ]
